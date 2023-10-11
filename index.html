@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-home">
+        <div class="search">
+            <input type="text" placeholder="enter city name" id="inputcity">
+            <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="erros">
+            <p>Invalid city name</p>
+        </div>
+        <div class="weather">
+            <img src="images/clear.png" class="weather_img">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">Ha Noi</h2>
+            <h5 id="result"><i class="fa-solid fa-clock"></i></h5>
+            <div class="deltai">
+                <div class="col">
+                    <img src="images/humidity.png">
+                    <div>
+                        <h1 class="humidity">80<span>%</span></h1>
+                        <h3>Humidity</h3>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png">
+                        <div>                
+                            <h1 class="wind">3,0 <span>Km/h</span></h1>
+                            <h3>Wind Speed</h3>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
